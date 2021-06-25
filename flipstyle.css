@@ -1,0 +1,763 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #232426;
+}
+
+/********************************* Header ******************************/
+
+header {
+  background: #2874f0;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly !important;
+  place-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header .logo_container {
+  width: 10vw;
+  position: relative;
+  height: 36px;
+}
+
+header .logo_container .container {
+  position: absolute;
+  right: 5px;
+}
+
+header .logo_container .flipKart {
+  padding: 0 6px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-family: "Heebo", sans-serif;
+}
+
+header .logo_container .plus_container {
+  position: relative;
+  width: 87px;
+}
+
+header .logo_container a.plus {
+  text-decoration: none;
+  position: absolute;
+  top: -7px;
+  left: 7px;
+  font-size: 12.5px;
+  font-style: italic;
+  color: white;
+}
+
+header .logo_container a.plus:hover {
+  text-decoration: underline;
+}
+
+header .logo_container a.plus span {
+  color: #ffe500;
+  font-weight: 500;
+}
+
+header .logo_container .plus_container img {
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+
+header .search_container {
+  width: 38vw;
+  /* margin: 0 20px 0 0; */
+  position: relative;
+}
+
+header .search_container .search {
+  width: 100%;
+  height: 36px;
+  padding: 0 14px;
+  outline: none;
+  border: none;
+}
+
+header .search_container::after {
+  position: absolute;
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 17px;
+  color: rgb(40, 116, 241);
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+header .links {
+  display: inline-flex;
+  align-items: center;
+}
+
+header .login {
+  position: relative;
+  /* margin-left: 45px; */
+  width: 8vw;
+}
+
+header .login a .btn_Login {
+  width: 100%;
+  height: 32px;
+  background: #000;
+  color: #2874f0;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header .login:hover .pointer {
+  display: block;
+  top: 7px;
+}
+
+header .login .login_Options {
+  display: none;
+  position: absolute;
+  font-family: serif;
+  font-weight: bold;
+  top: 46px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  list-style: none;
+  width: 220px;
+  background-color: #000;
+}
+
+header .login .login_Options .login_EachOption {
+  padding: 15px;
+  border-bottom: 0.2px solid gray;
+  font-size: 14px;
+}
+
+header .login .login_Options .login_EachOption:last-child {
+  border: none;
+}
+
+header .login .login_Options .login_EachOption a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .login .login_Options .login_EachOption .signUp {
+  color: #2874f0;
+  float: right;
+}
+
+header .login .login_Options .login_EachOption .signUp:hover {
+  text-decoration: underline;
+}
+
+header .login:hover .login_Options {
+  display: block;
+  z-index: 90;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li.dropdown_Options {
+  position: relative;
+  margin-left: 45px;
+  font-family: serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header nav ul .dropdown_Options span::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+header nav ul .dropdown_Options:hover span::after {
+  content: "\f077";
+}
+
+.pointer {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2px;
+  height: 66px;
+  width: 95px;
+}
+
+header nav ul li:hover .pointer {
+  display: block;
+}
+
+header nav .more_Options {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 39px;
+  transform: translateX(-50%);
+  width: 220px;
+  background-color: #000;
+}
+
+header nav .more_Options .single_Option {
+  padding: 15px;
+  border-bottom: 0.2px solid gray;
+  font-size: 13px;
+}
+
+header nav .more_Options .single_Option:last-child {
+  border: none;
+}
+
+header nav .more_Options .single_Option a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header nav ul li:hover .more_Options {
+  display: block;
+  z-index: 90;
+}
+
+.icon {
+  margin-right: 13px;
+  color: #2874f0;
+  font-size: 14px;
+}
+
+header nav .cart {
+  margin-left: 60px;
+  font-family: serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header nav .cart .shopping_Cart {
+  margin-right: 5px;
+}
+
+/********************************* Main Content ******************************/
+
+main {
+  place-items: 🇨enter;
+}
+
+/********************************* Categories Items ******************************/
+
+main .categories {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #121212;
+  height: 95px;
+  align-items: center;
+}
+
+main .categories .category_Link {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+main .categories .category_Link .category_Item .category_Icon {
+  position: relative;
+  background-size: 100%;
+}
+
+.fa-gifts {
+  background-image: linear-gradient(
+    45deg,
+    red,
+    orange,
+    rgba(255, 255, 0, 0.555)
+  );
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-shopping-bag {
+  background-image: linear-gradient(50deg, blue, green, red);
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-mobile {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.575),
+    10%,
+    rgb(214, 18, 50)
+  );
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+.fa-mobile-alt {
+  background-image: linear-gradient(70deg, rgb(96, 96, 235), orange);
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transform: translateX(-15px);
+  z-index: 2;
+}
+
+.fa-vest-patches {
+  background-image: linear-gradient(90deg, purple, blue, cornflowerblue);
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-laptop {
+  background-image: linear-gradient(50deg, gray, blue);
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-headphones-alt {
+  background-image: linear-gradient(360deg, black, red);
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transform: translateX(-7px) rotate3d(-1, 10, 0, 225deg);
+}
+
+.fa-couch {
+  background-image: linear-gradient(50deg, cornflowerblue, orange, aqua);
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-tv {
+  background-image: linear-gradient(120deg, gray, orange, red, rgb(3, 92, 3));
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-plane {
+  background-image: linear-gradient(100deg, wheat, red, wheat);
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-baby-carriage {
+  background-image: linear-gradient(
+    10deg,
+    rgb(238, 25, 60),
+    orange,
+    rgb(3, 92, 3)
+  );
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-gamepad {
+  background-image: linear-gradient(70deg, rgb(238, 25, 60), gray);
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 25px;
+  transform: translateY(6px);
+}
+
+main .categories .category_Link .category_Item p {
+  margin-top: 19px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+main .categories .category_Link:hover .category_Item p {
+  color: #2874f0;
+}
+
+/*************************** Clothing Menu ***********************/
+
+main .clothing_Menu {
+  background-color: #121212;
+  height: 380px;
+  position: relative;
+  margin: 0 8px 0;
+}
+
+main .clothing_Menu .clothing_Title {
+  margin: 18px 0 0 22px;
+  display: inline-block;
+}
+
+main .clothing_Menu .all_ClothingAnchor {
+  text-decoration: none;
+  color: #fff;
+}
+
+main .clothing_Menu .all_ClothingAnchor .all_ClothItems {
+  background: #2874f0;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+  border: none;
+  float: right;
+  margin: 18px 22px 0 0;
+  border-radius: 2px;
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 800;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+main .clothing_Menu .all_Clothes {
+  clear: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+main .clothing_Menu .all_Clothes .clothing_Link {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  cursor: default;
+}
+
+main .clothing_Menu .all_Clothes .clothing_Link .clothing_Item {
+  cursor: pointer;
+}
+
+main
+  .clothing_Menu
+  .all_Clothes
+  .clothing_Link
+  .clothing_Item:hover
+  .clothing_Icon {
+  transform: scale(1.1);
+}
+
+main .clothing_Menu .all_Clothes .clothing_Link .clothing_Item .clothing_Icon {
+  background-color: rgb(231, 226, 226);
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main
+  .clothing_Menu
+  .all_Clothes
+  .clothing_Link
+  .clothing_Item
+  .clothing_Caption
+  p {
+  padding: 16px 0 0;
+  font-size: 13.5px;
+}
+
+main
+  .clothing_Menu
+  .all_Clothes
+  .clothing_Link
+  .clothing_Item
+  .clothing_Caption
+  p:first-child {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+main
+  .clothing_Menu
+  .all_Clothes
+  .clothing_Link
+  .clothing_Item
+  .clothing_Caption
+  p:nth-child(2) {
+  color: green;
+}
+
+main
+  .clothing_Menu
+  .all_Clothes
+  .clothing_Link
+  .clothing_Item
+  .clothing_Caption
+  p:nth-child(3) {
+  color: #9b9b9b;
+}
+
+.fa-tshirt {
+  background-image: linear-gradient(to top, orange, rgb(238, 25, 60), yellow);
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-user-tie {
+  background-image: linear-gradient(rgb(21, 255, 0) 50%, rgb(8, 243, 145));
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-socks {
+  background-image: linear-gradient(to bottom, gray, rgba(41, 40, 40, 0.753));
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-mitten {
+  background-image: linear-gradient(
+    to top,
+    rgb(86, 206, 6),
+    rgba(218, 163, 11, 0.849)
+  );
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-hat-wizard {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(166, 6, 206),
+    rgba(11, 107, 218, 0.753)
+  );
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-hat-cowboy-side {
+  background-image: linear-gradient(to bottom, brown, rgba(165, 42, 42, 0.295));
+  background-clip: icon;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+/*************************** Footer ***********************/
+
+footer {
+  height: 120px;
+  background: linear-gradient(135deg, #172337 42%, #2874f0);
+  display: grid;
+  place-items: center;
+  transition: 2s ease-in-out 0.1s;
+}
+
+footer:hover {
+  background: linear-gradient(135deg, rgb(16, 85, 211) 42%, aqua);
+}
+
+footer .note {
+  background-image: linear-gradient(135deg, cornflowerblue 42%, aqua);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+footer:hover .note {
+  background-image: linear-gradient(135deg, #172337 42%, #2874f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+footer .note > span {
+  font-size: 2.3em;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-family: "Heebo", sans-serif;
+}
+
+footer .note strong {
+  font-size: 1.3em;
+  text-decoration: none;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1.5px;
+  transition: 2.5s ease-in-out 0.5s;
+  -webkit-text-decoration-color: transparent;
+  -moz-text-decoration-color: transparent;
+  display: block;
+  text-align: center;
+}
+
+footer:hover .note strong {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #32278c;
+}
+
+/*************************** Responsiveness ***********************/
+
+@media screen and (max-width: 1120px) {
+  main .clothing_Menu .all_Clothes .clothing_Link .clothing_Item .clothing_Icon i{
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 1195px) {
+  main .clothing_Menu{
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  main .clothing_Menu .all_Clothes{
+    justify-content: normal;
+  }
+
+  main .clothing_Menu .all_Clothes .clothing_Link{
+    padding: 0 23px;  
+  }
+
+  .clothing_Menu::-webkit-scrollbar{
+    background: transparent;
+    height: 7px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .clothing_Menu::-webkit-scrollbar-thumb{
+    background: turquoise;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  header nav {
+    margin: -24px;
+  }
+
+  header nav .cart {
+    margin-left: 28px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    height: 153px;
+    flex-direction: column;
+  }
+
+  header .search_container {
+    width: 53vw;
+  }
+
+  header .login {
+    width: 11vw;
+  }
+
+  main .categories {
+    justify-content: normal;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  main .categories .category_Link {
+    padding: 0 20px;
+  }
+
+  main .categories::-webkit-scrollbar {
+    background: #18191a; 
+    height: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  main .categories::-webkit-scrollbar-thumb{
+    background: #2874F0;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  main .categories::-webkit-scrollbar{
+    visibility: hidden;
+  }
+
+  main .categories::-webkit-scrollbar-thumb{
+    background: transparent;
+  }
+
+  main .clothing_Menu::-webkit-scrollbar{
+    visibility: hidden;
+  }
+
+  main .clothing_Menu::-webkit-scrollbar-thumb{
+    background: transparent;
+  }
+}
