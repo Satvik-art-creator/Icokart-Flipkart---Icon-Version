@@ -33,7 +33,7 @@
         </div>
 
         <div class="search_container">
-            <input type="search" class="search" placeholder="Search for Products, Brands and More">
+            <input type="search" class="search" id="switch" placeholder="Search for Products, Brands and More">
         </div>
 
         <div class="links">
@@ -342,6 +342,24 @@
             <strong>USING ICONS ONLY</strong>
         </span>
     </footer>
+
+    <script>
+
+        //switching the placeholder
+        var switchText = document.getElementById("switch");
+        var mediaQuery = window.matchMedia("(max-width: 490px)");
+
+        function switchPlaceHolder(x){
+            if(x.matches){
+                switchText.placeholder = "Search for Products";
+            } else{
+                switchText.placeholder = "Search for Products, Brands and More";
+            }
+        }
+
+        switchPlaceHolder(mediaQuery);
+        mediaQuery.addListener(switchPlaceHolder);
+    </script>
 
 </body>
 
