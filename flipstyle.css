@@ -761,3 +761,9 @@ footer:hover .note strong {
     background: transparent;
   }
 }
+
+@media screen and (max-width: 480px) {
+  header .login{
+    width: 14vw;
+  }
+}
