@@ -441,6 +441,7 @@ main .clothing_Menu {
 }
 
 main .clothing_Menu .clothing_Title {
+  color: #fff;
   margin: 18px 0 0 22px;
   display: inline-block;
 }
@@ -672,27 +673,25 @@ footer:hover .note strong {
 }
 
 @media screen and (max-width: 1195px) {
-  main .clothing_Menu{
+  main .clothing_Menu .all_Clothes{
     overflow-y: hidden;
     overflow-x: auto;
     white-space: nowrap;
-  }
-
-  main .clothing_Menu .all_Clothes{
     justify-content: normal;
+    height: 90%;
   }
 
   main .clothing_Menu .all_Clothes .clothing_Link{
     padding: 0 23px;  
   }
 
-  .clothing_Menu::-webkit-scrollbar{
+  .all_Clothes::-webkit-scrollbar{
     background: transparent;
     height: 7px;
     -webkit-overflow-scrolling: touch;
   }
 
-  .clothing_Menu::-webkit-scrollbar-thumb{
+  .all_Clothes::-webkit-scrollbar-thumb{
     background: turquoise;
     border-radius: 50%;
   }
@@ -753,11 +752,11 @@ footer:hover .note strong {
     background: transparent;
   }
 
-  main .clothing_Menu::-webkit-scrollbar{
+  main .all_Clothes::-webkit-scrollbar{
     visibility: hidden;
   }
 
-  main .clothing_Menu::-webkit-scrollbar-thumb{
+  main .all_Clothes::-webkit-scrollbar-thumb{
     background: transparent;
   }
 }
@@ -765,5 +764,16 @@ footer:hover .note strong {
 @media screen and (max-width: 480px) {
   header .login{
     width: 14vw;
+  }
+}
+
+@media screen and (max-width: 387px){
+  main .clothing_Menu .clothing_Header .clothing_Title{
+    font-size: 1.1em;
+  }
+
+  main .clothing_Menu .clothing_Header .all_ClothingAnchor .all_ClothItems{
+    padding: 9px 12px;
+    font-size: 13px;
   }
 }
