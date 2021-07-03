@@ -495,7 +495,7 @@ main
 }
 
 main .clothing_Menu .all_Clothes .clothing_Link .clothing_Item .clothing_Icon {
-  background-color: rgb(231, 226, 226);
+  background-color: #332F2F;
   height: 130px;
   display: flex;
   align-items: center;
